@@ -2,42 +2,248 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
-	<title></title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	<link rel="stylesheet" href="css/main.min.css">
+  <meta charset="utf-8">
+  <!-- <base href="/"> -->
+  <title>
+    
+  </title>
+  <meta name="description" content="Startup HTML template OptimizedHTML 5">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="images/favicon.png">
+  <meta property="og:image" content="images/dist/preview.jpg">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
+  <div class="page">
+    <header class="header">
+      <a href="#" class="brand">Me<span class="accent">g</span></a>
+      <a href="#" class="cart"><img src="images/dist/cart.svg" alt="cart-icon" class="cart__img"></a>
+      <ul class="menu">
+        <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+        <li class="menu__item">
+          <a href="#" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="user"><img src="images/dist/user2.jpg" alt="user-icon" class="user__img"></a>
+    </header>
 
-	<div class="page">
+<main class="main">
 
-		<header class="header">
-			<a href="#" class="brand">Me<span class="accent">g</span></a>
-			<a href="#" class="cart"><img src="images/dist/cart.svg" alt="cart-icon" class="cart__img"></a>
-			<ul class="menu">
-				<li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">About</a></li>
-				<li class="menu__item">
-					<a href="#" class="hamburger">
-						<span></span>
-						<span></span>
-						<span></span>
-					</a>
-				</li>
-			</ul>
-			<a href="#" class="user"><img src="images/dist/user2.jpg" alt="user-icon" class="user__img"></a>
-		</header>
+  <div class="main-top">
+    <div class="main-top__left">
+      <h1 class="main-top__title">Store</h1>
+      <ul class="menu main-top__menu">
+        <li class="menu__item"><a href="#" class="menu__link">All</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Men</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Women</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Kids</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Other</a></li>
+      </ul>
+    </div>
+    <div class="search-form">
+      <input type="text" class="myInput search-form__input" placeholder="Search anything...">
+      <button><img src="images/dist/search.svg" alt="search-icon"></button>
+    </div>
+  </div>
 
-  <main class="main">
+  <div class="sort">
+    <div class="sort-left">
+      <a href="#" class="sort-left__link"><img class="sort-left__icon" src="images/dist/boots-icon.svg"/></a>
+      <a href="#" class="sort-left__link"><img class="sort-left__icon" src="images/dist/hat-icon.svg"/></a>
+      <a href="#" class="sort-left__link"><img class="sort-left__icon" src="images/dist/bag-icon.svg"/></a>
+      <a href="#" class="sort-left__link"><img class="sort-left__icon" src="images/dist/sunglasses-icon.svg"/></a>
+    </div>
+    <div class="sort-right">
+      <a href="#" class="btn btn-icon">Sort <img class="svg" src="images/dist/sort.svg"/></a>
+      <a href="#" class="btn btn-icon">Filter <img class="svg" src="images/dist/filter.svg"/></a>
+    </div>
+  </div>
 
-    store
+  <div class="swiper-container product">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-container img-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="product-desc">
+          <div class="product-desc__left">
+            <p class="product__name">Great Hat 2021 for men</p>
+            <p class="product__price">$ 35</p>
+          </div>
+          <div class="product-desc__right">
+            <div class="product-color">
+              <a href="#" class="product-color__item"></a>
+              <a href="#" class="product-color__item"></a>
+              <a href="#" class="product-color__item"></a>
+            </div>
+            <div class="product-btns">
+              <a href="#" class="btn product-btns__item"><img class="svg" src="images/dist/like.svg"/></a>
+              <a href="#" class="btn product-btns__item"><img class="svg" src="images/dist/add.svg"/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-container img-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="product-desc">
+          <div class="product-desc__left">
+            <p class="product__name">Great Hat 2021 for men</p>
+            <p class="product__price">$ 35</p>
+          </div>
+          <div class="product-desc__right">
+            <div class="product-color">
+              <a href="#" class="product-color__item"></a>
+              <a href="#" class="product-color__item"></a>
+              <a href="#" class="product-color__item"></a>
+            </div>
+            <div class="product-btns">
+              <a href="#" class="btn product-btns__item"><img class="svg" src="images/dist/like.svg"/></a>
+              <a href="#" class="btn product-btns__item"><img class="svg" src="images/dist/add.svg"/></a>
+            </div>
+          </div>
+        </div>
+        <div class="sale">-20%</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-container img-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="product-desc">
+          <div class="product-desc__left">
+            <p class="product__name">Great Hat 2021 for men</p>
+            <p class="product__price">$ 35</p>
+          </div>
+          <div class="product-desc__right">
+            <div class="product-color">
+              <a href="#" class="product-color__item"></a>
+              <a href="#" class="product-color__item"></a>
+              <a href="#" class="product-color__item"></a>
+            </div>
+            <div class="product-btns">
+              <a href="#" class="btn product-btns__item"><img class="svg" src="images/dist/like.svg"/></a>
+              <a href="#" class="btn product-btns__item"><img class="svg" src="images/dist/add.svg"/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-container img-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="product-desc">
+          <div class="product-desc__left">
+            <p class="product__name">Great Hat 2021 for men</p>
+            <p class="product__price">$ 35</p>
+          </div>
+          <div class="product-desc__right">
+            <div class="product-color">
+              <a href="#" class="product-color__item"></a>
+              <a href="#" class="product-color__item"></a>
+              <a href="#" class="product-color__item"></a>
+            </div>
+            <div class="product-btns">
+              <a href="#" class="btn product-btns__item"><img class="svg" src="images/dist/like.svg"/></a>
+              <a href="#" class="btn product-btns__item"><img class="svg" src="images/dist/add.svg"/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-container img-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="product-desc">
+          <div class="product-desc__left">
+            <p class="product__name">Great Hat 2021 for men</p>
+            <p class="product__price">$ 35</p>
+          </div>
+          <div class="product-desc__right">
+            <div class="product-color">
+              <a href="#" class="product-color__item"></a>
+              <a href="#" class="product-color__item"></a>
+              <a href="#" class="product-color__item"></a>
+            </div>
+            <div class="product-btns">
+              <a href="#" class="btn product-btns__item"><img class="svg" src="images/dist/like.svg"/></a>
+              <a href="#" class="btn product-btns__item"><img class="svg" src="images/dist/add.svg"/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-container img-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="product" class="img-slider__img"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="product-desc">
+          <div class="product-desc__left">
+            <p class="product__name">Great Hat 2021 for men</p>
+            <p class="product__price">$ 35</p>
+          </div>
+          <div class="product-desc__right">
+            <div class="product-color">
+              <a href="#" class="product-color__item"></a>
+              <a href="#" class="product-color__item"></a>
+              <a href="#" class="product-color__item"></a>
+            </div>
+            <div class="product-btns">
+              <a href="#" class="btn product-btns__item"><img class="svg" src="images/dist/like.svg"/></a>
+              <a href="#" class="btn product-btns__item"><img class="svg" src="images/dist/add.svg"/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 
-  </main>
+  <div class="copyright">
+  <ul class="social-links">
+    <a href="#" class="social-links__item"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="social-links__item"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-links__item"><i class="fab fa-instagram"></i></a>
+  </ul>
+  <p class="copyright__text">©Copyright 2021. Made by moontheme</p>
+</div>
+
+</main>
 
 		<footer class="footer">
 			

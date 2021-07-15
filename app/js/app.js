@@ -5,8 +5,8 @@ import Swiper from 'swiper';
 
 require('~/app/vendor/slidinput/jquery.slidinput.min.js');
 require('~/node_modules/tabslet/jquery.tabslet.min.js');
-
 require('~/node_modules/@fortawesome/fontawesome-free/js/all.js');
+require('~/app/vendor/animate-svg/animate-svg.js');
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -21,10 +21,28 @@ document.addEventListener('DOMContentLoaded', () => {
 			animation: true,
 		});
 
-		// const swiper = new Swiper('.main-slider', {
+		// const mainSlider = new Swiper('.main-slider', {
 		// 	direction: 'vertical',
 		// 	speed: 800,
 		// });
+
+		let product = new Swiper(".product", {
+			slidesPerView: 3,
+			spaceBetween: 180,
+			// pagination: {
+			// 	el: ".swiper-pagination",
+			// 	clickable: true,
+			// },
+		});
+
+		let imgSlider = new Swiper(".img-slider", {
+			slidesPerView: 1,
+			// allowTouchMove: false,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
 
 	});
 
