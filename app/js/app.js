@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			offsetX: 25,
 		});
 
-		$('.main-tabs').tabslet({
+		$('.tabs').tabslet({
 			animation: true,
 		});
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		// 	speed: 800,
 		// });
 
-		let product = new Swiper(".product", {
+		let products = new Swiper(".products", {
 			slidesPerView: 3,
 			spaceBetween: 180,
 			// pagination: {

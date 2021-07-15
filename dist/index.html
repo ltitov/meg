@@ -18,11 +18,11 @@
 <body>
   <div class="page">
     <header class="header">
-      <a href="#" class="brand">Me<span class="accent">g</span></a>
+      <a href="index.html" class="brand">Me<span class="accent">g</span></a>
       <a href="#" class="cart"><img src="images/dist/cart.svg" alt="cart-icon" class="cart__img"></a>
       <ul class="menu">
-        <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+        <li class="menu__item"><a href="store.html" class="menu__link">Shop</a></li>
+        <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
         <li class="menu__item">
           <a href="#" class="hamburger">
             <span></span>
@@ -43,30 +43,32 @@
     </div>
   </div>
 
-  <div class="main-body">
-    <div class='main-tabs'>
-      <ul class="tab-btns">
-        <li><a href="#tab-1">Men</a></li>
-        <li><a href="#tab-2">Women</a></li>
-      </ul>
-      <div id='tab-1' class="main-content">
-        <div class="main-content__left">
+  <div class='tabs'>
+    <ul class="tab-btns">
+      <li><a href="#tab-1">Men</a></li>
+      <li><a href="#tab-2">Women</a></li>
+    </ul>
+    <div id='tab-1' class="tabs-content">
+      <ul class="content main-content">
+        <li class="content__item main-content__left">
           <ul class="future-list">
             <li class="future-list__item"><img src="images/dist/future-icon-1.svg" alt="future-icon">Free Shipping</li>
             <li class="future-list__item"><img src="images/dist/future-icon-2.svg" alt="future-icon">Secure Payment</li>
             <li class="future-list__item"><img src="images/dist/future-icon-3.svg" alt="future-icon">24/7 Support</li>
             <li class="future-list__item"><img src="images/dist/future-icon-4.svg" alt="future-icon">90 Days Return</li>
           </ul>
-        </div>
-        <div class="main-content__center">
+        </li>
+
+        <li class="content__item">
           <div class="product">
             <img src="images/dist/shoes1-1.png" alt="product" class="product__img">
             <div class="product__title">Trend Shoes New 2021</div>
             <div class="product__desc">Class aptent taciti sociosqu ad litora, torquent per conubia nostra per inceptos himenaeos.</div>
-            <a href="" class="btn">View Collection</a>
+            <a href="" class="btn product__btn">View Collection</a>
           </div>
-        </div>
-        <div class="main-content__right">
+        </li>
+
+        <li class="content__item main-content__right">
           <div class="video-block">
             <div class="video-block__left"><img src="images/dist/play-button.svg" alt="play-btn"></div>
             <div class="video-block__right">
@@ -74,26 +76,31 @@
               <p class="video-block__desc">Discover video</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div id='tab-2' class="main-content">
-        <div class="main-content__left">
+        </li>
+      </ul>
+    </div>
+
+    <div id='tab-2' class="tabs-content">
+      <ul class="content main-content">
+        <li class="content__item main-content__left">
           <ul class="future-list">
             <li class="future-list__item"><img src="images/dist/future-icon-1.svg" alt="future-icon">Free Shipping</li>
             <li class="future-list__item"><img src="images/dist/future-icon-2.svg" alt="future-icon">Secure Payment</li>
             <li class="future-list__item"><img src="images/dist/future-icon-3.svg" alt="future-icon">24/7 Support</li>
             <li class="future-list__item"><img src="images/dist/future-icon-4.svg" alt="future-icon">90 Days Return</li>
           </ul>
-        </div>
-        <div class="main-content__center">
+        </li>
+
+        <li class="content__item">
           <div class="product">
             <img src="images/dist/shoes2-1.png" alt="product" class="product__img">
             <div class="product__title">Trend Shoes New 2021</div>
             <div class="product__desc">Class aptent taciti sociosqu ad litora, torquent per conubia nostra per inceptos himenaeos.</div>
             <a href="" class="btn">View Collection</a>
           </div>
-        </div>
-        <div class="main-content__right">
+        </li>
+
+        <li class="content__item main-content__right">
           <div class="video-block">
             <div class="video-block__left"><img src="images/dist/play-button.svg" alt="play-btn"></div>
             <div class="video-block__right">
@@ -101,8 +108,8 @@
               <p class="video-block__desc">Discover video</p>
             </div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </div>
 
