@@ -21,23 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			animation: true,
 		});
 
-		// const mainSlider = new Swiper('.main-slider', {
-		// 	direction: 'vertical',
-		// 	speed: 800,
-		// });
-
 		let products = new Swiper(".products", {
 			slidesPerView: 3,
 			spaceBetween: 180,
-			// pagination: {
-			// 	el: ".swiper-pagination",
-			// 	clickable: true,
-			// },
 		});
 
 		let imgSlider = new Swiper(".img-slider", {
 			slidesPerView: 1,
-			// allowTouchMove: false,
+			allowTouchMove: false,
 			pagination: {
 				el: ".swiper-pagination",
 				clickable: true,
