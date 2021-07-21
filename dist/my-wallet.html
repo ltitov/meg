@@ -33,7 +33,7 @@
       <a href="#" class="btn btn-square user"><img src="images/dist/user2.jpg" alt="user-icon" class="user__img"></a>
     </header>
 
-<div class="main section wallet">
+<main class="main main-bg-1">
 
   <div class="main-top">
   <div class="search-form">
@@ -42,9 +42,9 @@
   </div>
 </div>
 
-  <div class="content section-content">
-    <div class="section-inner-m">
-      <h1 class="section__title wallet__title heading-h2">My Wallet</h1>
+  <div class="content content-s">
+    <div class="section section-m">
+      <h1 class="wallet__title heading-h2">My Wallet</h1>
       <img src="images/dist/master-card.png" alt="wallet-img" class="wallet__img">
       <div class="paypal-form">
         <p class="paypal-form__title">Your Paypal</p>
@@ -54,21 +54,21 @@
         <p class="addcard-form__title">Add New Card</p>
         <label class="form-label">
           <span class="form-label_span">Card Holder Name</span>
-          <input type="text" class="myInput form-label_input" placeholder="TONY NGUYEN">
+          <input type="text" class="myInput form-label_input card-name-mask" placeholder="TONY NGUYEN">
         </label>
         <label class="form-label">
           <span class="form-label_span">Valid Until</span>
-          <input type="text" class="myInput form-label_input" placeholder="04/2024">
+          <input type="text" class="myInput form-label_input card-valid-mask" placeholder="04 / 2024">
         </label>
         <label class="form-label">
           <span class="form-label_span">Card Number</span>
-          <input type="text" class="myInput form-label_input" placeholder="3445  5666   4555   4452">
+          <input type="text" class="myInput form-label_input card-num-mask" placeholder="3445  5666   4555   4452">
         </label>
         <label class="form-label">
           <span class="form-label_span">CVC</span>
-          <input type="text" class="myInput form-label_input" placeholder="•••">
+          <input type="text" class="myInput form-label_input card-cvc-mask" placeholder="•••">
         </label>
-        <div class="addcard-form__btn_wrap">
+        <div class="form-btn-wrap">
           <button class="btn btn-accent">Save Profile</button>
         </div>
       </div>
@@ -84,7 +84,7 @@
   <p class="copyright__text">©Copyright 2021. Made by moontheme</p>
 </div>
 
-</div>
+</main>
 
 	</div>
 	<script src="js/app.min.js"></script>

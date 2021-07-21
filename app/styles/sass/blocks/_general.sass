@@ -5,6 +5,7 @@ $white: #ffffff
 $headerbg: #1A1D20
 $mainbg: #1C1F22
 $inputbg: #202427
+$border: #25292C
 
 // - - - 
 
@@ -54,8 +55,8 @@ button
 
 .btn
   display: inline-block
-  padding: 1.5rem 6rem
-  border-radius: 1.5rem
+  padding: 1.4rem 5.5rem
+  border-radius: 2rem
   border: .1rem solid #25292C
   font-size: 1.6rem
   transition: .3s
@@ -128,6 +129,8 @@ button
   width: 95%
   height: 100%
   display: flex
+  &-s
+    width: 90%
   &__item
     width: 25%
     &:nth-child(1)
@@ -135,3 +138,22 @@ button
     &:nth-child(2)
       width: 45%
       margin-right: 8%
+
+// - - - 
+
+.section
+  text-align: center
+  &-s
+    width: 33rem
+    margin: 0 auto
+  &-m
+    width: 57rem
+    margin: 0 auto
+  &-l
+    width: 87rem
+    margin: 0 auto
+
+// - - - 
+
+.slidinput-placeholder
+  color: $gray !important

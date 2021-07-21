@@ -1,0 +1,50 @@
+<!--#include virtual="/parts/header.html" -->
+
+<main class="main">
+
+  <!--#include virtual="/parts/search-form.html" -->
+
+  <div class="content content-s">
+    <div class="section section-l ">
+      <h1 class="shopingcart__title heading-h2">Confirm Order</h1>
+      <ul class="order-list">
+        <li class="order-list__item">
+          <img src="images/dist/cart-product-1.png" alt="order-product" class="order-list__img">
+          <p class="order-list__counter">2</p>
+        </li>
+        <li class="order-list__item">
+          <img src="images/dist/cart-product-2.png" alt="order-product" class="order-list__img">
+          <p class="order-list__counter">1</p>
+        </li>
+      </ul>
+      <div class="order-total">
+        <span>Total 3 items</span>
+        <span class="order-total__price">$ 35.00</span>
+      </div>
+      <div class="order-inner">
+        <div class="order-form">
+          <p class="form-title">Delivery Infomation</p>
+          <input type="text" class="myInput form-input-l" placeholder="004 Riley Street, 2050 Sydney, Australia">
+          <input type="text" class="myInput" placeholder="Name">
+          <input type="tel" class="myInput phone-mask" placeholder="Phone">
+        </div>
+        <div class="order-form">
+          <p class="form-title">Payment Method</p>
+          <input type="text" class="myInput form-input-l card-name-mask" placeholder="Card holder name">
+          <input type="text" class="myInput form-input-l card-num-mask" placeholder="Card number">
+          <input type="text" class="myInput card-valid-mask" placeholder="Expiry">
+          <input type="tel" class="myInput card-cvc-mask" placeholder="CVV">
+        </div>
+        <div class="form-btn-wrap">
+          <a href="#" class="btn">Back</a>
+          <a href="#" class="btn btn-accent">Confirmation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--#include virtual="/parts/copyright.html" -->
+
+</main>
+
+<!--#include virtual="/parts/footer.html" -->

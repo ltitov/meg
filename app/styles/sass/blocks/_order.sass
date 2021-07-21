@@ -1,0 +1,57 @@
+.order
+  &-list
+    margin-bottom: 3rem
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    gap: 3rem
+    &__item
+      width: 15rem
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+    &__counter
+      width: 2.5rem
+      height: 2.5rem
+      background: $accent
+      border-radius: 100%
+      font-size: 1.2rem
+      display: flex
+      align-items: center
+      justify-content: center
+      position: absolute
+      top: 0
+      right: 0
+  &-total
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 1rem
+    font-size: 1.5rem
+    &__price
+      margin-bottom: 3rem
+      font-size: 1.8rem
+      font-weight: 500
+      color: $accent
+  &-inner
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: start
+    .form-btn-wrap
+      display: flex
+      justify-content: center
+      gap: 3rem
+      .btn
+        width: 20rem
+        padding: 1.4rem 0
+
+.order-form
+  width: 40rem
+  display: flex
+  flex-wrap: wrap
+  gap: 1.2rem
+  input
+    width: 48.35%

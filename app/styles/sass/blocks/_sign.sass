@@ -1,0 +1,88 @@
+.form
+  &-title
+    width: 100%
+    margin-bottom: 2rem
+  &-label
+    display: flex
+    flex-direction: column
+    gap: .5rem
+    text-align: left
+    &_span
+      font-size: 1.2rem
+      text-transform: uppercase
+    &_input
+      width: 27rem !important
+  &-btn-wrap
+    width: 100%
+    margin-top: 4rem
+    text-align: center
+  &-input-l
+    width: 100% !important
+    &-wrapper
+      width: 100%
+
+// - - - 
+
+.sign
+  &__text
+    font-size: 1.5rem
+    color: $gray
+  &-form
+    margin-bottom: 2.5rem
+    display: flex
+    flex-direction: column
+    gap: 1.5rem
+    &__input
+      padding: 1.2rem
+      font-size: 1.4rem
+      background: $inputbg
+      border-radius: 1.5rem
+    &__btn
+      margin-top: 1rem
+
+// - - - 
+
+.cart-empty
+  .sign
+    &__img
+      margin: 11rem auto 9rem auto
+    &__title
+      margin-bottom: 1rem
+    &__text
+      margin-bottom: 3rem
+
+// - - - 
+
+.sign-in
+  .sign
+    &__img
+      margin: 3rem auto 6.5rem auto
+    &__title
+      margin-bottom: 4rem
+    &__text
+      margin-bottom: 1.5rem
+    &__footer
+      font-size: 1.5rem
+      color: $gray
+  .social-btns
+    margin-bottom: 2rem
+
+// - - - 
+
+.social-btns
+  display: flex
+  gap: 2rem
+  justify-content: center
+  &__item
+    width: 4.5rem
+    height: 4.5rem
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 1.5rem
+    border: .1rem solid #25292C
+    &:hover
+      color: $accent
+      background: #1C1F22
+      border: .1rem solid transparent
+      box-shadow: .2rem 1.2rem 2rem rgba($black, .2)

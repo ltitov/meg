@@ -1,0 +1,65 @@
+.main
+  max-width: calc( 100vw - 14rem )
+  padding: 3.5rem 7.5rem 5.5rem 9rem
+  background: $mainbg
+  border-radius: 3rem 0 0 3rem
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+  
+  &-bg-1
+    background: url('../images/dist/settings-bg-1.png') center top no-repeat
+  &-bg-2
+    background: url('../images/dist/about-bg-2.png') center center no-repeat
+
+  &-top
+    display: flex
+    margin-bottom: 3rem
+    &__left
+      display: flex
+      gap: 5rem
+    &__menu
+      height: 8.5rem
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      gap: .5rem 5rem
+      .menu__link:hover
+        color: $accent
+
+  &-content
+    align-items: flex-end
+    &__left
+      padding-bottom: 9rem
+    &__right
+      padding-bottom: 6rem
+
+// - - - 
+
+.search-form
+  margin-left: auto
+  display: flex
+  align-items: center
+  gap: 2rem
+  &__input
+    max-width: 16rem
+    font-size: 1.5rem
+    background: none
+
+// - - - 
+
+.copyright
+  margin-top: auto
+  padding-top: 3rem
+  text-align: right
+  color: $gray
+  &__text
+    font-size: 1.4rem
+  .social-links
+    margin-bottom: 1.5rem
+    &__item
+      color: $gray
+      &:not(:last-of-type)
+        margin-right: 2rem
+      &:hover
+        color: $accent

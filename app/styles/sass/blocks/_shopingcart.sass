@@ -1,0 +1,81 @@
+.shopingcart
+  margin-bottom: 3rem
+  padding-bottom: 4rem
+  border-bottom: .1rem solid $border
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  gap: 4rem 7rem
+
+  &__title
+    margin-bottom: 8rem
+
+  &-product
+    width: 22rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__img
+      width: 11rem
+      margin-bottom: 3rem
+    &__price
+      margin-bottom: 1rem
+    &__settings
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__size
+      width: 2.6rem
+      height: 2.6rem
+      border-radius: .6rem
+      background: $inputbg
+      border: .1rem solid $border
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 1.2rem
+    &__rem
+      width: 2.6rem
+      height: 2.6rem
+      display: flex
+      align-items: center
+      justify-content: center
+      &:hover
+        .svg path
+          fill: $white
+
+// - - - 
+
+.counter
+  width: 6.6rem
+  height: 2.6rem
+  padding: 0 .5rem
+  border: .1rem solid $border
+  border-radius: .6rem
+  display: flex
+  align-items: center
+  justify-content: space-around
+  button, input
+    padding: 0
+    background: none
+    color: $white
+  input
+    width: 2rem
+    text-align: center
+
+// - - - 
+
+.total
+  width: 27rem
+  margin: 0 auto
+  font-size: 1.5rem
+  &__item
+    margin-bottom: 1.5rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__price
+    color: $accent
+    font-size: 1.8rem
+    font-weight: 500
