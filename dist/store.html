@@ -16,9 +16,10 @@
 
 <body>
   <div class="page">
+    
     <header class="header">
       <a href="index.html" class="brand">Me<span class="accent">g</span></a>
-      <a href="#" class="btn btn-square cart"><img src="images/dist/cart.svg" alt="cart-icon" class="cart__img"></a>
+      <a href="#" class="btn btn-square cart dropmenu-cart-btn"><img src="images/dist/cart.svg" alt="cart-icon" class="cart__img"></a>
       <ul class="menu header-menu">
         <li class="menu__item"><a href="store.html" class="menu__link">Store</a></li>
         <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
@@ -32,6 +33,70 @@
       </ul>
       <a href="#" class="btn btn-square user"><img src="images/dist/user2.jpg" alt="user-icon" class="user__img"></a>
     </header>
+
+    <div class="dropmenu-cart slidemenu-l">
+      <div class="dropmenu dropmenu-l dropmenu-cart-content">
+        <div class="dropmenu-close-wrap">
+          <a href="" class="dropmenu-close dropmenu-cart-inner-btn">Close</a>
+        </div>
+        <p class="dropmenu__title">Shopping Cart</p>
+
+        <div class="shopingcart-product dropmenu-cart__product">
+          <img src="images/dist/cart-product-1.png" alt="shopingcart-product" class="shopingcart-product__img dropmenu-cart__product_img">
+          <div>
+            <p class="shopingcart-product__name">White shoes new for men</p>
+            <p class="shopingcart-product__price">$35</p>
+            <div class="shopingcart-product__settings">
+              <div class="counter">
+                <button class="counter-rem">-</button>
+                <input type="text" class="counter-input" value="2">
+                <button class="counter-add">+</button>
+              </div>
+              <ul class="color-list color-list-m">
+                <li class="color-list__item">
+                  <input type="checkbox" name="" id="color-5-1" class="color-list__checkbox">
+                  <label for="color-5-1" class="color-list__label color-3"></label>
+                </li>
+                <li class="color-list__item">
+                  <input type="checkbox" name="" id="color-5-2" class="color-list__checkbox">
+                  <label for="color-5-2" class="color-list__label color-5"></label>
+                </li>
+              </ul>
+              <a href="#" class="shopingcart-product__size">S</a>
+              <a href="#" class="shopingcart-product__rem"><img src="images/dist/icon-delete.svg" alt="delete-icon" class="svg"></a>
+          </div>
+          </div>
+        </div>
+
+        <div class="shopingcart-product dropmenu-cart__product">
+          <img src="images/dist/cart-product-1.png" alt="shopingcart-product" class="shopingcart-product__img dropmenu-cart__product_img">
+          <div>
+            <p class="shopingcart-product__name">White shoes new for men</p>
+            <p class="shopingcart-product__price">$35</p>
+            <div class="shopingcart-product__settings">
+              <div class="counter">
+                <button class="counter-rem">-</button>
+                <input type="text" class="counter-input" value="2">
+                <button class="counter-add">+</button>
+              </div>
+              <ul class="color-list color-list-m">
+                <li class="color-list__item">
+                  <input type="checkbox" name="" id="color-6-1" class="color-list__checkbox">
+                  <label for="color-6-1" class="color-list__label color-3"></label>
+                </li>
+                <li class="color-list__item">
+                  <input type="checkbox" name="" id="color-6-2" class="color-list__checkbox">
+                  <label for="color-6-2" class="color-list__label color-5"></label>
+                </li>
+              </ul>
+              <a href="#" class="shopingcart-product__size">S</a>
+              <a href="#" class="shopingcart-product__rem"><img src="images/dist/icon-delete.svg" alt="delete-icon" class="svg"></a>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
 <main class="main">
 
@@ -70,8 +135,20 @@
       <a href="#" class="sort-left__link"><img class="sort-left__icon" src="images/dist/sunglasses-icon.svg"/></a>
     </div>
     <div class="sort-right">
-      <a href="#" class="btn btn-icon">Sort <img class="svg" src="images/dist/sort.svg"/></a>
-      <a href="#" class="btn btn-icon">Filter <img class="svg" src="images/dist/filter.svg"/></a>
+      <div class="select unselected">
+        <div class="select__header sort-select__header">
+          <span class="select__current">Sort</span>
+          <div class="select__icon"><img src="images/dist/sort.svg" alt="icon"></div>
+        </div>
+        <div class="select__body sort-select__body">
+          <div class="select__item">Value 1</div>
+          <div class="select__item">Value 2</div>
+          <div class="select__item">Value 3</div>
+          <div class="select__item">Value 4</div>
+          <div class="select__item">Value 5</div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-icon dropmenu-filter-btn">Filter <img class="svg" src="images/dist/filter.svg"/></a>
     </div>
   </div>
 
@@ -89,14 +166,23 @@
         <div class="products-desc">
           <div class="products-desc__left">
             <p class="products__name">Great Hat 2021 for men</p>
-            <p class="products__price">$ 35</p>
+            <p class="products__price">$ 31</p>
           </div>
           <div class="products-desc__right">
-            <div class="products-color">
-              <a href="#" class="products-color__item"></a>
-              <a href="#" class="products-color__item"></a>
-              <a href="#" class="products-color__item"></a>
-            </div>
+            <ul class="color-list color-list-s products__color">
+              <li class="color-list__item">
+                <input type="checkbox" name="" id="color-1-1" class="color-list__checkbox">
+                <label for="color-1-1" class="color-list__label color-2"></label>
+              </li>
+              <li class="color-list__item">
+                <input type="checkbox" name="" id="color-1-2" class="color-list__checkbox">
+                <label for="color-1-2" class="color-list__label color-4"></label>
+              </li>
+              <li class="color-list__item">
+                <input type="checkbox" name="" id="color-1-3" class="color-list__checkbox">
+                <label for="color-1-3" class="color-list__label color-5"></label>
+              </li>
+            </ul>
             <div class="products-btns">
               <a href="#" class="btn products-btns__item"><img class="svg" src="images/dist/like.svg"/></a>
               <a href="#" class="btn products-btns__item"><img class="svg" src="images/dist/add.svg"/></a>
@@ -107,23 +193,32 @@
       <div class="swiper-slide">
         <div class="swiper-container img-slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="products" class="img-slider__img"></div>
-            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="products" class="img-slider__img"></div>
-            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="products" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/product-shoes-1.png" alt="products" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/product-shoes-1.png" alt="products" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/product-shoes-1.png" alt="products" class="img-slider__img"></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
         <div class="products-desc">
           <div class="products-desc__left">
             <p class="products__name">Great Hat 2021 for men</p>
-            <p class="products__price">$ 35</p>
+            <p class="products__price">$ 32</p>
           </div>
           <div class="products-desc__right">
-            <div class="products-color">
-              <a href="#" class="products-color__item"></a>
-              <a href="#" class="products-color__item"></a>
-              <a href="#" class="products-color__item"></a>
-            </div>
+            <ul class="color-list color-list-s products__color">
+              <li class="color-list__item">
+                <input type="checkbox" name="" id="color-2-1" class="color-list__checkbox">
+                <label for="color-2-1" class="color-list__label color-2"></label>
+              </li>
+              <li class="color-list__item">
+                <input type="checkbox" name="" id="color-2-2" class="color-list__checkbox">
+                <label for="color-2-2" class="color-list__label color-4"></label>
+              </li>
+              <li class="color-list__item">
+                <input type="checkbox" name="" id="color-2-3" class="color-list__checkbox">
+                <label for="color-2-3" class="color-list__label color-5"></label>
+              </li>
+            </ul>
             <div class="products-btns">
               <a href="#" class="btn products-btns__item"><img class="svg" src="images/dist/like.svg"/></a>
               <a href="#" class="btn products-btns__item"><img class="svg" src="images/dist/add.svg"/></a>
@@ -135,23 +230,32 @@
       <div class="swiper-slide">
         <div class="swiper-container img-slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="products" class="img-slider__img"></div>
-            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="products" class="img-slider__img"></div>
-            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="products" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/product-hat-1.png" alt="products" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/product-hat-1.png" alt="products" class="img-slider__img"></div>
+            <div class="swiper-slide"><img src="images/dist/product-hat-1.png" alt="products" class="img-slider__img"></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
         <div class="products-desc">
           <div class="products-desc__left">
             <p class="products__name">Great Hat 2021 for men</p>
-            <p class="products__price">$ 35</p>
+            <p class="products__price">$ 33</p>
           </div>
           <div class="products-desc__right">
-            <div class="products-color">
-              <a href="#" class="products-color__item"></a>
-              <a href="#" class="products-color__item"></a>
-              <a href="#" class="products-color__item"></a>
-            </div>
+            <ul class="color-list color-list-s products__color">
+              <li class="color-list__item">
+                <input type="checkbox" name="" id="color-3-1" class="color-list__checkbox">
+                <label for="color-3-1" class="color-list__label color-2"></label>
+              </li>
+              <li class="color-list__item">
+                <input type="checkbox" name="" id="color-3-2" class="color-list__checkbox">
+                <label for="color-3-2" class="color-list__label color-4"></label>
+              </li>
+              <li class="color-list__item">
+                <input type="checkbox" name="" id="color-3-3" class="color-list__checkbox">
+                <label for="color-3-3" class="color-list__label color-5"></label>
+              </li>
+            </ul>
             <div class="products-btns">
               <a href="#" class="btn products-btns__item"><img class="svg" src="images/dist/like.svg"/></a>
               <a href="#" class="btn products-btns__item"><img class="svg" src="images/dist/add.svg"/></a>
@@ -171,68 +275,23 @@
         <div class="products-desc">
           <div class="products-desc__left">
             <p class="products__name">Great Hat 2021 for men</p>
-            <p class="products__price">$ 35</p>
+            <p class="products__price">$ 34</p>
           </div>
           <div class="products-desc__right">
-            <div class="products-color">
-              <a href="#" class="products-color__item"></a>
-              <a href="#" class="products-color__item"></a>
-              <a href="#" class="products-color__item"></a>
-            </div>
-            <div class="products-btns">
-              <a href="#" class="btn products-btns__item"><img class="svg" src="images/dist/like.svg"/></a>
-              <a href="#" class="btn products-btns__item"><img class="svg" src="images/dist/add.svg"/></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper-container img-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="products" class="img-slider__img"></div>
-            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="products" class="img-slider__img"></div>
-            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="products" class="img-slider__img"></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <div class="products-desc">
-          <div class="products-desc__left">
-            <p class="products__name">Great Hat 2021 for men</p>
-            <p class="products__price">$ 35</p>
-          </div>
-          <div class="products-desc__right">
-            <div class="products-color">
-              <a href="#" class="products-color__item"></a>
-              <a href="#" class="products-color__item"></a>
-              <a href="#" class="products-color__item"></a>
-            </div>
-            <div class="products-btns">
-              <a href="#" class="btn products-btns__item"><img class="svg" src="images/dist/like.svg"/></a>
-              <a href="#" class="btn products-btns__item"><img class="svg" src="images/dist/add.svg"/></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper-container img-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="products" class="img-slider__img"></div>
-            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="products" class="img-slider__img"></div>
-            <div class="swiper-slide"><img src="images/dist/hat-1.png" alt="products" class="img-slider__img"></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <div class="products-desc">
-          <div class="products-desc__left">
-            <p class="products__name">Great Hat 2021 for men</p>
-            <p class="products__price">$ 35</p>
-          </div>
-          <div class="products-desc__right">
-            <div class="products-color">
-              <a href="#" class="products-color__item"></a>
-              <a href="#" class="products-color__item"></a>
-              <a href="#" class="products-color__item"></a>
-            </div>
+            <ul class="color-list color-list-s products__color">
+              <li class="color-list__item">
+                <input type="checkbox" name="" id="color-4-1" class="color-list__checkbox">
+                <label for="color-4-1" class="color-list__label color-2"></label>
+              </li>
+              <li class="color-list__item">
+                <input type="checkbox" name="" id="color-4-2" class="color-list__checkbox">
+                <label for="color-4-2" class="color-list__label color-4"></label>
+              </li>
+              <li class="color-list__item">
+                <input type="checkbox" name="" id="color-4-3" class="color-list__checkbox">
+                <label for="color-4-3" class="color-list__label color-5"></label>
+              </li>
+            </ul>
             <div class="products-btns">
               <a href="#" class="btn products-btns__item"><img class="svg" src="images/dist/like.svg"/></a>
               <a href="#" class="btn products-btns__item"><img class="svg" src="images/dist/add.svg"/></a>
@@ -241,8 +300,132 @@
         </div>
       </div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-prev"><div class="btn btn-square"><img src="images/dist/icon-arrow-left.svg" alt="arrow" class=""></div></div>
+    <div class="swiper-button-next"><div class="btn btn-square"><img src="images/dist/icon-arrow-right.svg" alt="arrow" class=""></div></div>
+  </div>
+
+  <div class="dropmenu-wrap dropmenu-filter slidemenu-r">
+    <div class="dropmenu dropmenu-r dropmenu-filter-content">
+      <div class="dropmenu-close-wrap">
+        <a href="#" class="dropmenu-close dropmenu-filter-inner-btn">Close</a>
+      </div>
+      <p class="dropmenu__title">Filter</p>
+  
+      <ul class="gender-form">
+        <li class="gender-form__item">
+          <input type="checkbox" name="" id="gender-1" class="gender-form__radio" checked>
+          <label for="gender-1" class="gender-form__label">Men</label>
+        </li>
+        <li class="gender-form__item">
+          <input type="checkbox" name="" id="gender-2" class="gender-form__radio">
+          <label for="gender-2" class="gender-form__label">Women</label>
+        </li>
+      </ul>
+  
+      <div class="categories-form">
+        <p class="categories-form__title">Categories</p>
+        <div class="select unselected">
+          <div class="select__header">
+            <span class="select__current">Select Categories</span>
+            <div class="select__icon"><img src="images/dist/icon-arrow-down.svg" alt="icon"></div>
+          </div>
+          <div class="select__body">
+            <div class="select__item">Value 1</div>
+            <div class="select__item">Value 2</div>
+            <div class="select__item">Value 3</div>
+            <div class="select__item">Value 4</div>
+            <div class="select__item">Value 5</div>
+          </div>
+        </div>
+      </div>
+  
+      <ul class="color-list colors-form">
+        <li class="dropmenu__subtitle-wrap">
+          <p class="dropmenu__subtitle">Color</p>
+        </li>
+        <li class="color-list__item">
+          <input type="checkbox" name="" id="color-1" class="color-list__checkbox">
+          <label for="color-1" class="color-list__label color-1"></label>
+        </li>
+        <li class="color-list__item">
+          <input type="checkbox" name="" id="color-2" class="color-list__checkbox">
+          <label for="color-2" class="color-list__label color-2"></label>
+        </li>
+        <li class="color-list__item">
+          <input type="checkbox" name="" id="color-3" class="color-list__checkbox">
+          <label for="color-3" class="color-list__label color-3"></label>
+        </li>
+        <li class="color-list__item">
+          <input type="checkbox" name="" id="color-4" class="color-list__checkbox">
+          <label for="color-4" class="color-list__label color-4"></label>
+        </li>
+        <li class="color-list__item">
+          <input type="checkbox" name="" id="color-5" class="color-list__checkbox">
+          <label for="color-5" class="color-list__label color-5"></label>
+        </li>
+        <li class="color-list__item">
+          <input type="checkbox" name="" id="color-6" class="color-list__checkbox">
+          <label for="color-6" class="color-list__label color-6"></label>
+        </li>
+        <li class="color-list__item">
+          <input type="checkbox" name="" id="color-7" class="color-list__checkbox">
+          <label for="color-7" class="color-list__label color-7"></label>
+        </li>
+        <li class="color-list__item">
+          <input type="checkbox" name="" id="color-8" class="color-list__checkbox">
+          <label for="color-8" class="color-list__label color-8"></label>
+        </li>
+        <li class="color-list__item">
+          <input type="checkbox" name="" id="color-9" class="color-list__checkbox">
+          <label for="color-9" class="color-list__label color-9"></label>
+        </li>
+        <li class="color-list__item">
+          <input type="checkbox" name="" id="color-10" class="color-list__checkbox">
+          <label for="color-10" class="color-list__label color-10"></label>
+        </li>
+      </ul>
+  
+      <ul class="price-form">
+        <p class="dropmenu-subtitle">Price</p>
+        <input type="text" class="price-form__range" name="my_range" value="">
+      </ul>
+  
+      <ul class="brand-list">
+        <li class="dropmenu__subtitle-wrap">
+          <p class="dropmenu__subtitle">Brand</p>
+        </li>
+        <li class="brand-list__item">
+          <input type="checkbox" name="" id="brand-1" class="brand-list__checkbox">
+          <label for="brand-1" class="brand-list__label"><img src="images/dist/brand-img-1.png" alt="brand" class="brand-list__img"></label>
+        </li>
+        <li class="brand-list__item">
+          <input type="checkbox" name="" id="brand-2" class="brand-list__checkbox">
+          <label for="brand-2" class="brand-list__label"><img src="images/dist/brand-img-2.png" alt="brand" class="brand-list__img"></label>
+        </li>
+        <li class="brand-list__item">
+          <input type="checkbox" name="" id="brand-3" class="brand-list__checkbox">
+          <label for="brand-3" class="brand-list__label"><img src="images/dist/brand-img-3.png" alt="brand" class="brand-list__img"></label>
+        </li>
+        <li class="brand-list__item">
+          <input type="checkbox" name="" id="brand-4" class="brand-list__checkbox">
+          <label for="brand-4" class="brand-list__label"><img src="images/dist/brand-img-4.png" alt="brand" class="brand-list__img"></label>
+        </li>
+        <li class="brand-list__item">
+          <input type="checkbox" name="" id="brand-5" class="brand-list__checkbox">
+          <label for="brand-5" class="brand-list__label"><img src="images/dist/brand-img-5.png" alt="brand" class="brand-list__img"></label>
+        </li>
+        <li class="brand-list__item">
+          <input type="checkbox" name="" id="brand-6" class="brand-list__checkbox">
+          <label for="brand-6" class="brand-list__label"><img src="images/dist/brand-img-6.png" alt="brand" class="brand-list__img"></label>
+        </li>
+      </ul>
+  
+      <div class="btn-wrap">
+        <button class="btn">Clear</button>
+        <button class="btn btn-accent">Filter</button>
+      </div>
+  
+    </div>
   </div>
 
   <div class="copyright">
