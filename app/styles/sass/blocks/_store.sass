@@ -1,5 +1,5 @@
 .sort
-  margin-top: 6.2rem
+  margin-top: 3.5rem
   display: flex
   align-items: center
   justify-content: space-between
@@ -25,21 +25,39 @@
           fill: $white
       .svg path
         fill: $gray
+  &-select
+    &__header
+      z-index: 5
+      background: $headerbg
+    &__body
+      background: $mainbg
+      z-index: 4
 
 // - - - 
 
 .products
   width: 100%
-  margin-top: auto
-  padding-top: 10rem
+  margin: auto 0
+  padding-top: 4rem
+  transform: translateY(-2rem)
   .swiper-slide
     position: relative
+  .swiper-button-next, .swiper-button-prev
+    width: auto
+    top: 30%
+    &::after
+      display: none
   .img-slider
+    padding-bottom: 10rem
     &__img
       max-width: 37rem
       margin: auto
+    .swiper-pagination-bullet
+      background: #3C4044
+      &-active
+        background: #FFFFFF
   &-desc
-    margin-top: 16rem
+    margin-top: 7rem
     display: flex
     justify-content: space-between
     &__left
@@ -51,16 +69,8 @@
     line-height: 1.3
   &__price
     color: $accent
-  &-color
-    display: flex
-    gap: 1rem
+  &__color
     justify-content: flex-end
-    &__item
-      display: inline-block
-      width: 2rem
-      height: 2rem
-      background: $accent
-      border-radius: .6rem
   &-btns
     margin-top: 3rem
     display: flex
@@ -82,8 +92,8 @@
 
 .sale
   position: absolute
-  top: 0
-  right: -2.5rem
+  top: -2rem
+  right: -1.5rem
   background: $accent
   color: $white
   padding: .7rem 1.5rem .7rem 2.5rem
@@ -100,3 +110,225 @@
     top: 50%
     left: 13%
     transform: translateY(-50%)
+
+// - - -
+
+.dropmenu
+  padding: 6rem
+  background: $headerbg
+  &-close
+    display: inline-block
+    margin-bottom: 2rem
+    text-transform: uppercase
+    color: $gray
+    font-size: 1.2rem
+    &-wrap
+      display: flex
+      justify-content: flex-end
+  &__title
+    margin-bottom: 4rem
+    font-size: 2.4rem
+    font-weight: 600
+    text-align: center
+    &_form
+      width: 100%
+      margin-bottom: .5rem
+      font-size: 1.5rem
+      font-weight: 500
+  &__subtitle
+    font-size: 1.5rem
+    font-weight: 500
+    &-wrap
+      width: 100%
+
+  &-r
+    border-radius: 4rem 0 0 4rem
+  &-l
+    border-radius: 0 4rem 4rem 0
+
+  &-filter
+    &-content
+      z-index: 35
+    &-space
+      z-index: 30
+
+  .btn-wrap
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 3rem
+
+// - - -
+
+.gender-form
+  margin-bottom: 2rem
+  display: flex
+  flex-wrap: wrap
+  gap: 2rem 4rem
+  &__item
+    position: relative
+  &__radio
+    display: none
+    &:checked
+      ~ .gender-form__label::after
+        opacity: 1
+  &__label
+    font-size: 1.5rem
+    display: flex
+    align-items: center
+    gap: 1rem
+    &::before
+      content: ''
+      display: block
+      width: 1.8rem
+      height: 1.8rem
+      border: .1rem solid $border
+      border-radius: 50%
+    &::after
+      content: ''
+      display: block
+      width: .8rem
+      height: .8rem
+      border-radius: 50%
+      background: $accent
+      position: absolute
+      left: .5rem
+      opacity: 0
+      transition: .3s
+
+// - - -
+
+.categories-form
+  margin-bottom: 2rem
+  &__title
+    margin-bottom: 2rem
+    font-size: 1.5rem
+    font-weight: 500
+
+// - - -
+
+.colors-form
+  margin-bottom: 3rem
+
+.color-list
+  display: flex
+  flex-wrap: wrap
+  gap: 1rem
+  &__checkbox
+    display: none
+    &:checked
+      ~ .color-list__label::after
+        opacity: 1
+  &__label
+    position: relative
+    display: block
+    width: 4rem
+    height: 4rem
+    border-radius: 1.5rem
+    background: $accent
+    cursor: pointer
+    &::after
+      content: url('../images/dist/icon-check.svg')
+      display: block
+      line-height: 1
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      opacity: 0
+      transition: .3s
+  &-m
+    .color-list__label
+      width: 2.6rem
+      height: 2.6rem
+      border-radius: .7rem
+  &-s
+    .color-list__label
+      width: 2rem
+      height: 2rem
+      border-radius: .7rem
+
+.color
+  &-1
+    background: #D7D7D7
+  &-2
+    background: #ffffff
+  &-3
+    background: #FABF59
+  &-4
+    background: #302E2F
+  &-5
+    background: #F49AC1
+  &-6
+    background: #F76C68
+  &-7
+    background: #4D519E
+  &-8
+    background: #000000
+  &-9
+    background: #662D91
+  &-10
+    background: #46DBC9
+  &-11
+    background: #534741
+
+// - - - 
+
+.price-form
+  margin-bottom: 4rem
+  flex-direction: column
+  .irs
+    &-line, &-bar
+      height: .5rem
+    &-line
+      background: $mainbg
+    &-bar
+      background: $accent
+    &-min, &-max, &-from, &-to, &-single
+      background: none
+      top: 4.5rem
+      font-size: 1.2rem
+      font-weight: 500
+      &::before
+        display: none
+    &-handle
+      height: 1.4rem
+      top: 2.1rem
+      i
+        display: none
+        &:first-child
+          display: block
+          width: 1rem
+          height: 1.4rem
+          background: none
+          border: .2rem solid $accent
+          border-radius: .5rem
+      &.from
+        i:first-child
+          left: 0
+      &:hover
+        i:first-child
+          background: $accent
+
+// - - - 
+
+.brand-list
+  margin-bottom: 6rem
+  display: flex
+  flex-wrap: wrap
+  gap: 1.5rem
+  &__checkbox
+    display: none
+    &:checked
+      ~ .brand-list__label
+        border: .1rem solid $accent
+  &__label
+    width: 7rem
+    height: 7rem
+    display: flex
+    align-items: center
+    justify-content: center
+    border: .1rem solid $border
+    border-radius: 2rem
+    cursor: pointer
+    transition: .3s

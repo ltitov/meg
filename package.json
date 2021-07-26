@@ -39,5 +39,8 @@
 		"swiper": "^6.7.5",
 		"tabslet": "^1.7.3",
 		"webpack-stream": "^6.1.2"
+	},
+	"dependencies": {
+		"ion-rangeslider": "^2.3.1"
 	}
 }

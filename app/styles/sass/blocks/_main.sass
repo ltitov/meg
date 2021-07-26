@@ -1,6 +1,6 @@
 .main
   max-width: calc( 100vw - 14rem )
-  padding: 3.5rem 7.5rem 5.5rem 9rem
+  padding: 4.5rem 7.5rem 5.5rem 9rem
   background: $mainbg
   border-radius: 3rem 0 0 3rem
   flex-grow: 1
@@ -13,8 +13,9 @@
     background: url('../images/dist/about-bg-2.png') center center no-repeat
 
   &-top
-    display: flex
     margin-bottom: 3rem
+    display: flex
+    align-items: flex-start
     &__left
       display: flex
       gap: 5rem
@@ -30,9 +31,11 @@
   &-content
     align-items: flex-end
     &__left
+      padding-bottom: 18rem
+    &__center
       padding-bottom: 9rem
     &__right
-      padding-bottom: 6rem
+      padding-bottom: 15rem
 
 // - - - 
 
@@ -40,11 +43,15 @@
   margin-left: auto
   display: flex
   align-items: center
-  gap: 2rem
   &__input
+    padding: .7rem
+    border-radius: .5rem
     max-width: 16rem
     font-size: 1.5rem
     background: none
+  &__btn
+    padding: .85rem
+    border-radius: .5rem
 
 // - - - 
 
@@ -53,6 +60,11 @@
   padding-top: 3rem
   text-align: right
   color: $gray
+  padding: 0 7.5rem 5.5rem 9rem
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
   &__text
     font-size: 1.4rem
   .social-links
